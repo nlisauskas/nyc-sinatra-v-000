@@ -8,14 +8,14 @@
     <form class="" action="/landmarks/<%=@landmark.id%>" method="post">
       <label>Name:</label>
       <br></br>
-      <input type="text" name="landmark[name]" id="landmark_name" value="">
+      <input type="text" name="landmark[name]" id="landmark_name" value="@landmark.name">
       <br></br>
       <label>Year Completed:</label>
       <br></br>
-      <input type="text" name="landmark[year_completed]" id="landmark_year_completed" value="">
+      <input type="text" name="landmark[year_completed]" id="landmark_year_completed" value="@landmark.year_completed.to_s">
       <input type="submit" name="submit" value="Create New Landmark">
     </form>
-      
+
     </form>
   </body>
 </html>
