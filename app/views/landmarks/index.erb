@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <% Landmark.all.each_with_index do |landmark, value| %>
+    <ul>
+      <h2>Landmark <%= value %>.</h2>
+      <li><%=landmark.name%></li>
+      <li><%=landmark.year_completed%></li>
+    </ul>
+    <% end %>
+  </body>
+</html>
