@@ -25,4 +25,7 @@ class LandmarksController < ApplicationController
     erb :'landmarks/edit'
   end
 
+  post '/landmarks/:id'
+  @landmark = Landmark.find_by_id(params[:id])
+
 end
