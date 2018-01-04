@@ -10,6 +10,7 @@ class LandmarksController < ApplicationController
 
   post '/landmarks' do
     Landmark.create(params)
+    redirect to "/landmarks"
   end
 
 end
